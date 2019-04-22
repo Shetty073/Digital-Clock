@@ -31,3 +31,10 @@ function getClock() {
 
 getClock();
 setInterval(getClock, 1000);
+
+
+// Randomize background images
+var images = ['text-bg-1.svg', 'text-bg-2.svg'];
+var x = Math.floor(Math.random() * images.length);
+document.getElementById("clock").style.backgroundImage = "url(img/" + images[x] + ")";
+
